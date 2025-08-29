@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="My Suite" parallel="tests">
-    <test name="Test 1">
+<suite name="Amazon Test Suite">
+    <test name="Login">
         <classes>
-            <class name="testclasses.FirstTestClass">
+            <class name="testclasses.AmazonLogin">
                 <methods>
-                    <include name="login"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <test name="Test 2">
-        <parameter name="browser" value="Edge"/>
-        <parameter name="condition" value="true"/>
-        <classes>
-            <class name="testclasses.ParameterAnnotation">
-                <methods>
-                    <include name="testMethod1"/>
+                    <include name="performLogin"/>
+                    <include name="searchAndAddToCart"/>
                 </methods>
             </class>
         </classes>
