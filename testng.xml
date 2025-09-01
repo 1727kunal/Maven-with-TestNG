@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Amazon Test Suite">
-    <test name="Login">
+<suite name="Orange HRM Test Suite">
+    <test name="Orange HRM - Login">
         <classes>
-            <class name="testclasses.AmazonLogin">
+            <class name="testclasses.LoginTestOrangeHRM">
                 <methods>
-                    <include name="performLogin"/>
-                    <include name="searchAndAddToCart"/>
+                    <include name="testLoginScenario"/>
                 </methods>
             </class>
         </classes>
